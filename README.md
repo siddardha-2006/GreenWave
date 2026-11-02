@@ -31,6 +31,7 @@
 11. [Limitations & Constraints](limitations.md)
 12. [Deployment Guide (Docker, Cloud, VPS)](DEPLOYMENT.md)
 13. [Technology Stack Architecture](Tech_stack.md)
+14. [Master Engineering Prompts Book](prompts.md)
 
 ---
 
