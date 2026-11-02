@@ -30,6 +30,7 @@
 10. [Authors & Acknowledgments](#-authors--acknowledgments)
 11. [Limitations & Constraints](limitations.md)
 12. [Deployment Guide (Docker, Cloud, VPS)](DEPLOYMENT.md)
+13. [Technology Stack Architecture](Tech_stack.md)
 
 ---
 

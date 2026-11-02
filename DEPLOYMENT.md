@@ -288,3 +288,4 @@ After deployment, verify that both the backend and frontend are operating proper
    - Vehicles spawn and flow across the 3D intersection.
    - Signal heads cycle between Green, Yellow, and Red.
    - The Decision Audit Log receives real-time QAOA / classical solver decisions.
+
