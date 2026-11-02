@@ -1,0 +1,19 @@
+<routes>
+    <vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="5.0" minGap="2.5" maxSpeed="13.89"/>
+    <vType id="emergency" vClass="emergency" accel="3.5" decel="6.0" sigma="0.2" length="7.5" minGap="2.0" maxSpeed="20.0" guiShape="emergency"/>
+
+    <!-- Routes -->
+    <route id="r_NS" edges="N2C C2S"/>
+    <route id="r_NE" edges="N2C C2E"/>
+    <route id="r_NW" edges="N2C C2W"/>
+    <route id="r_SN" edges="S2C C2N"/>
+    <route id="r_SE" edges="S2C C2E"/>
+    <route id="r_SW" edges="S2C C2W"/>
+    <route id="r_EW" edges="E2C C2W"/>
+    <route id="r_EN" edges="E2C C2N"/>
+    <route id="r_ES" edges="E2C C2S"/>
+    <route id="r_WE" edges="W2C C2E"/>
+    <route id="r_WN" edges="W2C C2N"/>
+    <route id="r_WS" edges="W2C C2S"/>
+</routes>
+

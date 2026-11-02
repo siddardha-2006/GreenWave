@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #11100e;
+    color: #e8e1d5;
+    background-image: 
+      radial-gradient(circle at 50% 0%, rgba(212, 202, 186, 0.05) 0%, transparent 75%),
+      radial-gradient(circle at 90% 100%, rgba(201, 154, 91, 0.03) 0%, transparent 50%),
+      radial-gradient(circle at 10% 70%, rgba(176, 183, 192, 0.02) 0%, transparent 60%);
+    background-attachment: fixed;
+  }
+}
+
+/* Tactile Raw Board & Letterpress Utility Classes */
+.bg-board-canvas {
+  background-color: #11100e;
+  background-image: 
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.006) 0px, rgba(255, 255, 255, 0.006) 1px, transparent 1px, transparent 6px),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.004) 0px, rgba(255, 255, 255, 0.004) 1px, transparent 1px, transparent 6px);
+}
+
+/* Embossed Card / Die-Cut Plate */
+.embossed-plate {
+  background-color: #181715;
+  border: 1px solid rgba(212, 202, 186, 0.09);
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.5),
+    0 4px 20px rgba(0, 0, 0, 0.45);
+}
+
+/* Blind Debossed Well / Inset Pocket */
+.debossed-well {
+  background-color: #0c0b0a;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  box-shadow: 
+    inset 0 2px 5px rgba(0, 0, 0, 0.8),
+    inset 0 1px 2px rgba(0, 0, 0, 0.9),
+    0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+/* Tactile Mechanical Button */
+.tactile-btn {
+  background: #201e1b;
+  border: 1px solid rgba(212, 202, 186, 0.16);
+  box-shadow: 
+    0 2px 0 #0c0b0a,
+    0 4px 8px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  transition: all 0.12s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.tactile-btn:hover {
+  background: #282522;
+  border-color: rgba(212, 202, 186, 0.28);
+  color: #f5f2eb;
+}
+.tactile-btn:active {
+  transform: translateY(2px);
+  box-shadow: 
+    0 0 0 #0c0b0a,
+    inset 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Die-Cut Crease Line (Packaging Fold Simulation) */
+.crease-line {
+  position: relative;
+  border-top: 1px dashed rgba(212, 202, 186, 0.16);
+}
+
+/* Letterpress & Embossed Typography */
+.text-letterpress {
+  color: #e8e1d5;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.9), 0 -1px 0 rgba(255, 255, 255, 0.04);
+}
+.text-embossed {
+  color: #f5f2eb;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.95), 0 -1px 0 rgba(255, 255, 255, 0.14);
+}
+
+/* Foil Accents */
+.foil-gold {
+  color: #c99a5b;
+  text-shadow: 0 0 12px rgba(201, 154, 91, 0.25);
+}
+.foil-silver {
+  color: #b0b7c0;
+  text-shadow: 0 0 10px rgba(176, 183, 192, 0.2);
+}
+
+/* Technical Job Ticket Stamp */
+.stamp-border {
+  border: 1px solid rgba(212, 202, 186, 0.2);
+  position: relative;
+}
+.stamp-border::before {
+  content: '+';
+  position: absolute;
+  top: -8px;
+  left: -5px;
+  font-family: monospace;
+  font-size: 11px;
+  color: rgba(212, 202, 186, 0.4);
+}
+.stamp-border::after {
+  content: '+';
+  position: absolute;
+  bottom: -8px;
+  right: -5px;
+  font-family: monospace;
+  font-size: 11px;
+  color: rgba(212, 202, 186, 0.4);
+}
+
+/* Tactile Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0c0b0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #2b2824;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3d3933;
+}
+

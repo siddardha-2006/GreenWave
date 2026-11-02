@@ -1,0 +1,22 @@
+<connections>
+    <!-- North Incoming (N2C): Lane 0=Right (N-W: M2), Lane 1=Through (N-S: M0), Lane 2=Left (N-E: M1) -->
+    <connection from="N2C" to="C2W" fromLane="0" toLane="0"/>
+    <connection from="N2C" to="C2S" fromLane="1" toLane="1"/>
+    <connection from="N2C" to="C2E" fromLane="2" toLane="2"/>
+
+    <!-- South Incoming (S2C): Lane 0=Right (S-E: M4), Lane 1=Through (S-N: M3), Lane 2=Left (S-W: M5) -->
+    <connection from="S2C" to="C2E" fromLane="0" toLane="0"/>
+    <connection from="S2C" to="C2N" fromLane="1" toLane="1"/>
+    <connection from="S2C" to="C2W" fromLane="2" toLane="2"/>
+
+    <!-- East Incoming (E2C): Lane 0=Right (E-N: M7), Lane 1=Through (E-W: M6), Lane 2=Left (E-S: M8) -->
+    <connection from="E2C" to="C2N" fromLane="0" toLane="0"/>
+    <connection from="E2C" to="C2W" fromLane="1" toLane="1"/>
+    <connection from="E2C" to="C2S" fromLane="2" toLane="2"/>
+
+    <!-- West Incoming (W2C): Lane 0=Right (W-S: M11), Lane 1=Through (W-E: M9), Lane 2=Left (W-N: M10) -->
+    <connection from="W2C" to="C2S" fromLane="0" toLane="0"/>
+    <connection from="W2C" to="C2E" fromLane="1" toLane="1"/>
+    <connection from="W2C" to="C2N" fromLane="2" toLane="2"/>
+</connections>
+
