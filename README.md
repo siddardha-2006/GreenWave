@@ -28,6 +28,7 @@
 8. [Getting Started & Installation](#-getting-started--installation)
 9. [Running Tests](#-running-tests)
 10. [Authors & Acknowledgments](#-authors--acknowledgments)
+11. [Limitations & Constraints](limitations.md)
 
 ---
 
@@ -304,3 +305,4 @@ npm run build
 
 - **Lead Developer**: Siddardha Yarlagadda ([@siddardha-2006](https://github.com/siddardha-2006))
 - **Research Framework**: Quantum Approximate Optimization Algorithm (QAOA) applied to Maximum Weight Independent Sets for urban intelligent transport systems.
+
