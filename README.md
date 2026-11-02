@@ -5,7 +5,6 @@
 [![React 18](https://img.shields.io/badge/React-18.3-61dafb.svg)](https://reactjs.org/)
 [![Three.js](https://img.shields.io/badge/Three.js-r128-black.svg)](https://threejs.org/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-38bdf8.svg)](https://tailwindcss.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 > **GREEN-WAVE** is a research prototype and simulation-based decision-support system for urban traffic signal optimization. It formulates multi-corridor intersection scheduling as a **Maximum-Weight Independent Set (MWIS)** problem solved via **QUBO (Quadratic Unconstrained Binary Optimization)** and **QAOA (Quantum Approximate Optimization Algorithm)**, surrounded by a deterministic safety and clearance controller, a real-time predictive traffic model, and an interactive 3D digital twin.
 
