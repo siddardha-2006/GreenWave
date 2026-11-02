@@ -5,9 +5,11 @@ Initializes routes, CORS middleware, lifespan events, and configuration validati
 """
 
 import logging
+import os
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 from .api.routes import api_router
 from .core.config import settings
@@ -52,6 +54,12 @@ app.add_middleware(
 
 # Mount API routes
 app.include_router(api_router)
+
+# Mount production frontend build if present
+frontend_dist = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "frontend", "dist"))
+if os.path.exists(frontend_dist):
+    app.mount("/", StaticFiles(directory=frontend_dist, html=True), name="frontend")
+    logger.info("Serving production frontend from %s", frontend_dist)
 
 
 if __name__ == "__main__":

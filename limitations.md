@@ -116,3 +116,4 @@ This document outlines the current technical, algorithmic, mathematical, and ope
 | **Actuation** | Discrete 5s optimization steps | May hold green longer than necessary | Continuous actuation with vehicle gap-seeking logic |
 | **Vehicle Mix**| Passenger cars & ambulances only | Lacks commercial vehicles and bikes | Multi-class vehicle fleet dynamics with variable physical profiles |
 | **Standards** | WebSocket / JSON API | Cannot interface with real traffic cabinets | NTCIP 1202 protocol compliance layer |
+

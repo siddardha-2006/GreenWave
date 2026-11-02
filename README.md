@@ -29,6 +29,7 @@
 9. [Running Tests](#-running-tests)
 10. [Authors & Acknowledgments](#-authors--acknowledgments)
 11. [Limitations & Constraints](limitations.md)
+12. [Deployment Guide (Docker, Cloud, VPS)](DEPLOYMENT.md)
 
 ---
 
@@ -275,11 +276,18 @@ GreenWave/
    cd ..
    ```
 
-4. **Launch GREEN-WAVE**:
+4. **Launch GREEN-WAVE (Development)**:
    ```bash
    python run.py
    ```
    Open your browser to **`http://localhost:5173`**.
+
+5. **Launch with Docker (Production)**:
+   ```bash
+   docker compose up -d --build
+   ```
+   Open your browser to **`http://localhost:8000`**.
+   For comprehensive cloud and VPS deployment instructions (Render, Railway, Fly.io, Vercel, AWS, Ubuntu/Nginx), see the [**Deployment Guide (`DEPLOYMENT.md`)**](DEPLOYMENT.md).
 
 ---
 
